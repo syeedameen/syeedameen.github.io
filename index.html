@@ -1,1 +1,635 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no"><title>personal Website</title><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css"><link rel="stylesheet" href="/assets/css/styles.min.css?h=730bec29c786c28daf9416b582e17454"></head><body class="text-center"><!-- Start: Navigation Clean --><nav class="navbar navbar-light navbar-expand-md navigation-clean"><div class="container"><a class="navbar-brand" href="/index.html">Ameen's Website</a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button><div class="collapse navbar-collapse" id="navcol-1"><ul class="navbar-nav ms-auto"><li class="nav-item"><a class="nav-link active" href="#">About</a></li><li class="nav-item"><a class="nav-link" href="">CV</a></li><li class="nav-item"><a class="nav-link" href="/projects.html">Personal Projects</a></li><li class="nav-item"><a class="nav-link" href="#">Resources</a></li></ul></div></div></nav><!-- End: Navigation Clean --><img src="/assets/img/Picture%202020.jpg?h=149599d11dc6013ad2f91400fb555a07" style="width: 200px;text-align: center;transform: rotate(0deg) scale(1);filter: grayscale(0%);"><div class="alert alert-success" role="alert" style="background: var(--bs-blue);border-color: var(--bs-blue);color: var(--bs-dark);"><span><br>I am a professional software/firmware &amp; compiler engineer with extensive experience in back-end, web, and embedded systems development.I received the B.Tech degree in Computer Science &amp; Engineering from&nbsp;<strong><em>Rajasthan Technical University</em></strong>&nbsp;<br><br><br></span></div><!-- Start: Footer Basic --><footer class="footer-basic"><!-- Start: Social Icons --><div class="social"><a href="https://www.github.com/syeedameen"><i class="icon ion-social-github"></i></a><a href="https://www.linkedin.com/in/syeed-mohd-ameen-13641a1b4/"><i class="icon ion-social-linkedin" style="color: var(--bs-indigo);"></i></a><a href="mailto:syeedameen2@gmail.com"><i class="icon ion-email" style="color: var(--bs-red);"></i></a><a href="https://twitter.com/syeed_ameen"><i class="icon ion-social-twitter" style="color: var(--bs-blue);"></i></a></div><!-- End: Social Icons --><!-- Start: Links --><ul class="list-inline" style="color: var(--bs-dark);"><li class="list-inline-item"><a href="#">Home</a></li><li class="list-inline-item"><a href="#">CV</a></li><li class="list-inline-item"><a href="#">Personal Projects</a></li><li class="list-inline-item"><a href="#">Resources</a></li><li class="list-inline-item"></li></ul><!-- End: Links --><!-- Start: Copyright --><p class="copyright">Copyright Syeed Mohd Ameen © 2021</p><!-- End: Copyright --></footer><!-- End: Footer Basic --><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script></body></html>
+<!doctype html>
+<html lang="en">
+
+<head>
+    
+    <style>
+        * {box-sizing: border-box}
+        body {font-family: Verdana, sans-serif; margin:0}
+        .mySlides {display: none}
+        img {vertical-align: middle;}
+        
+        /* Slideshow container */
+        .slideshow-container {
+          max-width: 1000px;
+          position: relative;
+          margin: auto;
+        }
+        
+        /* Next & previous buttons */
+        .prev, .next {
+          cursor: pointer;
+          position: absolute;
+          top: 50%;
+          width: auto;
+          padding: 16px;
+          margin-top: -22px;
+          color: white;
+          font-weight: bold;
+          font-size: 18px;
+          transition: 0.6s ease;
+          border-radius: 0 3px 3px 0;
+          user-select: none;
+        }
+        
+        /* Position the "next button" to the right */
+        .next {
+          right: 0;
+          border-radius: 3px 0 0 3px;
+        }
+        
+        /* On hover, add a black background color with a little bit see-through */
+        .prev:hover, .next:hover {
+          background-color: rgba(0,0,0,0.8);
+        }
+        
+        /* Caption text */
+        .text {
+          color: black;
+          font-size: 15px;
+          /* padding: 8px 12px; */
+          position: absolute;
+          /* bottom: 8px; */
+          width: 100%;
+          text-align: center;
+        }
+        
+        /* Number text (1/3 etc) */
+        .numbertext {
+          color: #f2f2f2;
+          font-size: 12px;
+          padding: 8px 12px;
+          position: absolute;
+          top: 0;
+        }
+        
+        /* The dots/bullets/indicators */
+        .dot {
+          cursor: pointer;
+          height: 15px;
+          width: 15px;
+          margin: 0 2px;
+          background-color: #bbb;
+          border-radius: 50%;
+          display: inline-block;
+          transition: background-color 0.6s ease;
+        }
+        
+        .active, .dot:hover {
+          background-color: #717171;
+        }
+        
+        /* Fading animation */
+        .fade {
+          animation-name: fade;
+          animation-duration: 1.5s;
+        }
+        
+        @keyframes fade {
+          from {opacity: .4} 
+          to {opacity: 1}
+        }
+        
+        /* On smaller screens, decrease text size */
+        @media only screen and (max-width: 300px) {
+          .prev, .next,.text {font-size: 11px}
+        }
+    </style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Ameen webpage</title>
+    <link rel="shortcut icon" href="assets/images/fav.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="assets/images/fav.jpg">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/plugins/slider/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/plugins/slider/css/owl.theme.default.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+     <!-- <link rel="stylesheet" type="text/css" href="assets/css/style.css" /> -->
+</head>
+
+    <body>
+       <!--########################### Header Starts Here ###################### -->
+        <div class="home-screen container-fluid">
+          <div class="home-cover">
+                <div id="menu-jk" class="header">
+                   <div class="container">
+                       <div class="row" style="display: flex; justify-content: center;position:relative">
+                        <!-- style="display: flex; justify-content: center;position:relative" -->
+                           <div id="menu" class="d-none d-md-block" style="text-align: center;">
+                               <ul > 
+                                <!-- style="width: 100%; text-align: center;" -->
+                                   <li><a href="#">Home</a></li>
+                                   <li><a href="#education">Education</a></li>
+                                   <li><a href="#publications">Publications</a></li>
+                                   <!-- <li><a href="#exams">Exams Qualified</a></li> -->
+                                   <li><a href="#experience">Experience</a></li>
+                                   <li><a href="#projects">Projects</a></li>
+                                   <li><a href="#courses">Courses Taken at ZHCET, AMU </a></li>
+                                   <li><a href="#news"><font face="Trattatello">What's new?</font></a></li>
+                                   <li><a href="#cntact_us">Contact</a></li>
+                               </ul>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+                <div class="container">
+                   <div class="row home-detail" style="height:max-content">
+                      <div class="col-md-5 animated bounceInLeft hom-img">
+                        <span class="faded faded-all"><img src="assets/images/syeed.jpg" alt=""></span>
+                      </div>
+                      <div class="col-md-7 animated bounceInRight homexp">
+                           <h5>Hello I'm</h5>
+                           <h2>Syeed Mohd Ameen</h2>
+                           <span>Graduate Student <a href="https://www.amu.ac.in" >ZHCET, Aligarh Muslim University</a> </span>
+                           <p>I am a final-year postgraduate student at the ZHCET, Aligarh Muslim University. I have completed my Bachelor's in Computer Science Engineering from Rajasthan Technical University, Kota.
+                            I am currently working on my M.Tech project under the supervision of <a href="https://www.amu.ac.in/faculty/computer-engineering/abdus-samad">Dr. Abdus Samad </a>.
+                           </p>   
+                           <br>
+                           <br>                        
+                           <!-- <ul class="socil-icon">
+                                <li>
+                                    <a href="https://www.linkedin.com/in/toobakhan1703"><i class="fab fa-linkedin"></i></a>
+                                </li>
+                                <li>
+                                    <a href="https://github.com/KhanTooba"><i class="fab fa-github"></i></a>
+                                </li>
+                                <li>
+                                    <a href="mailto:tooba.khan.jcs21@csia.iitd.ac.in"><i class="fa fa-envelope" aria-hidden="true"></i></a> 
+                                </li> -->
+                           </ul>
+                       </div>
+                   </div>
+
+                </div>
+          </div>
+        </div>
+        
+        <!--########################### Education Starts Here ###################### -->
+        
+        <div id="education" class="about-us container-fluid" style="background-color:#F5F5F5">
+           <div class="container" >
+               <div class="session-title row " >
+                    <h2 >Education</h2>
+                    
+                    <div class="heading-line"></div>
+                    
+                </div>
+                <div class="about-row row" style="align-items: center; ">
+                    <ul style="width: 100%; text-align: center;">
+                        <!-- <li>M.Tech (Cyber Security), IIT Delhi. [2021-23]</li>
+                        <li>B.Tech (Computer Engineering), AMU. [2016-20]</li> -->
+                        <li class="myList"><strong>M.Tech (Software Engineering), ZHCET, AMU Aligarh.</strong>
+                            <br>CGPA: 7.9 | 2021-23
+                        </li>
+                        <br>
+                        <li class="myList"><strong>B.Tech (Computer Science & Engineering), RTU Kota.</strong>
+                            <br>CGPA: 6.8 | 2017-21
+                        </li>
+                      </ul>
+                  
+                </div>
+           </div>    
+            
+        </div>
+
+         <!--########################### Publications start Here ###################### -->
+<!-- 
+         <div id="publications" class="about-us container-fluid">
+            <div class="container" >
+                <div class="session-title row " >
+                     <h2 >Publications & Posters</h2>
+                     
+                     <div class="heading-line"></div>
+                     
+                 </div>
+                 <div class="about-row row" >
+                    <ul >
+                        <li class="myLists"><b>Tooba Khan</b>, Kumar Madhukar, & Subodh Vishnu Sharma. Efficient Adversarial Input Generation via Neural Net Patching.
+                                            <a href="https://arxiv.org/abs/2211.16808"><i>arXiv:2211.16808</i></a>, 2022.</li>
+                           
+                        <li class="myLists">Efficient Adversarial Input Generation via Neural Net Patching
+                                            <a href="https://sat-smt.in/assets/slides/short/aigent-poster.pdf"><b>[Poster]</b>
+                                            </a>
+                                            <a href="https://sat-smt.in/assets/slides/short/aigent-slides.pdf"><b>[Slides]</b>
+                                            </a>                                            
+                                        </li>
+                                        <li style="padding-left: 20px;">SAT-SMT School, FSTTCS'22, IIT Madras</li>
+                           
+                        
+                      </ul>
+                   
+                 </div>
+            </div>    
+             
+         </div> 
+-->
+
+        <!--########################### Education Starts Here ###################### -->
+<!--       
+        <div id="exams" class="about-us container-fluid" style="background-color:#F5F5F5">
+            <div class="container" >
+                <div class="session-title row " >
+                     <h2 >Exams Qualified</h2>
+                     
+                     <div class="heading-line"></div>
+                     
+                 </div>
+                 <div class="about-row row" style="justify-content:center">
+                     <ul style="width: max-content; text-align: center;">
+                        <li class="myList"><strong>IELTS Academic (International English Language Testing System)</strong>
+                            <br>Band: 8 | Nov'2022
+                        </li>
+                        <br>
+                        
+                        <li class="myList"><strong>GRE (Graduate Record of Examinations)</strong>
+                            <br>Score: 320 | Sept'2022
+                        </li>
+                        <br>
+                        
+                        <li class="myList"><strong>GATE (Graduate Aptitude Test in Engineering)</strong>
+                            <br>AIR: 306 | Feb'2021
+                        </li>
+                       </ul>
+                   
+                 </div>
+            </div>    
+             
+         </div>
+-->
+        
+           <!--########################### Experiences Starts Here ###################### -->
+           
+           <div id="experience" class="about-us container-fluid" >
+            <div class="container" >
+                <div class="session-title row " >
+                     <h2 >Experience</h2>
+                     
+                     <div class="heading-line"></div>
+                     
+                 </div>
+                 <div class="about-row row" >
+                    <ul style="width: 100%">
+                    <!-- <li><strong><em> Jr. Research Fellow</em>, IIT Delhi - New Delhi</strong> 
+                        <ol >
+
+                            <li class="myLists">Subsidence Design and developemnet of landslide detection device for hill prone station</li>
+                            <li class="myLists">COL-759 Cryptography and Computer Security [Aug'22-Dec'22]</li>
+                            <li class="myLists"><a href="https://timestsw.com/course/iit-delhi-certificate-programme-in-cybersecurity-foundations-and-pragmatics/">Certificate Programme in Cybersecurity: Foundations and Pragmatics</a> [Jan'22-May'22]</li>
+                            <li class="myLists">COL-750 Foundations of Formal Verification [Jan'22-Apr'22]</li>
+                            <li class="myLists">COL-765 Introduction to logic and Functional programming [Aug'21-Dec'21]</li>
+                        </ol>
+                    </li> -->
+                   <br>
+                   <style>
+                    .post_iitd{
+                        color: red;
+                        font-weight: 500;
+
+                    }
+                   </style>
+                   <style>
+                    .post_locatoin_iitd {
+                        color: black;
+                        font-weight: 100;
+                    }
+                   </style>
+                   <style>
+                        .project_name {
+                            color: red;
+
+                        }
+                   </style>
+
+                   <li class=" post_iitd"><strong>Jr. Research Fellow </strong> 
+                        <li> Indian Institute of Technology Delhi - New Delhi, India [Jun'23 - Present]</li>
+                        <br>
+                        <li class="myLists"> Project Title: Design and developemnet of a subsidence detection system in landslide prone hill slopes. </li>
+                        <li class="myLists"> Lab: Microprocessor,  Embedded System Lab </li>
+                        <!-- <li class="myLists"> I worked with Adafruit GNSS RTK Module that provide 1cm on postional accuracy. </li> -->
+                    </li>
+                    <br>
+
+
+                    <li class="post_iitd"><strong>PG Representative  </strong> 
+                        <li> AMU Roboclub - Aligarh Muslim University Aligarh, India [Jun'22 - Jun'23] </li>
+                        <br>
+                        <li class="myLists"> Taking various workshops related to microcontroller development boards (STM32, Arduino, Raspberry pi Pico etc.)</li> 
+                        <li class="myLists"> Supervise different projects groups in the lab (like - Programming and motor control group).</li>
+                        <li class="myLists"> Manage ABU Robocon(Asia-Pacific Robot Contest) team as leader and mentor to different groups</li>
+                        
+                    </li>
+                   <br>
+
+                    <li class="post_iitd"><strong>Software Engineering project lead</strong> 
+                        <li>AIETRobotics lab - Jaipur, India [July'18 - Feb'19]</li>
+                        <br> 
+                        <li class="myLists">Develop Flight controller firmware using STM32 & AVR Microcontroller (low-level subroutines written in assembly language    ). </li> 
+                        <li class="myLists">Testing and debugging the raw data of accelerometer, gyroscope (IMU - Inertial Measurement Unit). </li> 
+                        <li class="myLists">Design Flight controller PCB using Eagle EDA software. </li> 
+                    </li>
+                <br>
+                </ul>
+                  
+                </div>
+            </div>    
+             
+         </div>
+
+         <!--########################### Projects Starts Here ###################### -->
+           
+         <div id="projects" class="about-us container-fluid" style="background-color:#F5F5F5">
+            <div class="container" >
+                <div class="session-title row " >
+                     <h2 >Projects</h2>
+                     
+                     <div class="heading-line"></div>
+                     
+                 </div>
+                 <div class="about-row row" >
+                     <ul style="width: 100%">
+                        <li class="project_name"><strong>AVR AT89Sxx Programmer </strong> 
+                            <li class="myLists"> programmer that used to program AT89Sxx series of IC's </li>
+                            <a href="https://github.com/syeedameen/8051-programmer"><u>Github Repository</u></a>
+                            <br>
+                        </li>
+                    <br>
+                    <li class="project_name"><strong>MCS-51 FPU </strong> 
+                        <li class="myLists"> IEEE-754 Single precision Floating point support for MCS-51 Instruction set Architecture </li>
+                        <li class="myLists"> All the subroutines are written in assembly language</li>
+                        <li class="myLists"> fast calculation of fmul, fdiv, fadd, fsub. </li>
+                        <a href="https://github.com/syeedameen/MCS-51-subroutines"><u>Github Repository</u></a>
+                        <br>
+                    </li>
+                    <br>
+                    <li class="project_name"> <strong>ISA high level Assembler. </strong> </li>
+                    <a href="https://github.com/syeedameen/pydeasm"><u>Github Repository</u></a>
+                    <br>
+                    <br>
+                        <li class="project_name"><strong>ECG Monitoring and alert prediction device using AI </strong> </li> 
+                        <a href="https://github.com/syeedameen/ecg-device"><u>Github Repository</u></a>
+                        <br>
+                    <br>
+                        <li><strong class="project_name">Smart City Integration using Google voice kit </strong> <br> [March'22- Aug'22]
+                            <br>Supervisor: <a href="https://www.amu.ac.in/faculty/computer-engineering/mohammad-sarosh-umar">Prof. Mohammad Sarosh Umar </a>
+                        </li>
+                    <br>
+                       </ul>
+                   
+                 </div>
+            </div>    
+             
+         </div>
+
+
+         <!--########################### Courses Taken start Here ###################### -->
+           
+         <div id="courses" class="about-us container-fluid">
+            <div class="container" >
+                <div class="session-title row " >
+                     <h2 >Courses Taken at ZHCET, AMU Aligarh </h2>
+                     
+                     <div class="heading-line"></div>
+                     
+                 </div>
+                 <div class="about-row row" >
+                    <ul >
+                        <li class="myLists">COC-6010 Software Engineering Process & Methods </li>
+                        <li class="myLists">COE-6200 Artificial Intelligence </li>
+                        <li class="myLists">COC-6912 Software Verification & Testing</li>
+                        <li class="myLists">COE-6250 Big Data Analytics</li>
+                        <li class="myLists">COE-6270 Internet of Things</li>
+                        <li class="myLists">COE-6260 Image Processing & Computer Vision</li>
+                        <li class="myLists">COE-6220 Digital System Design</li>
+                        <li class="myLists">COC-6020 Software Modeling and Design </li>
+                        <li class="myLists">AMS6610  Numerical & Statistical Techniques</li>
+                   
+                 </div>
+            </div>    
+             
+         </div>
+
+    <!--  ************************* News Starts Here ************************** -->
+         
+<!--
+    <div id="news" class="about-us container-fluid" style="background-color:#F5F5F5">
+        <div class="container" >
+            <div class="session-title row " >
+                 <h2 ><font face="Trattatello">What's new?</font></h2>
+                 
+                 <div class="heading-line"></div>
+                 
+             </div>
+             <div class="about-row row" style="justify-content:center">
+                <table>
+                    <tr>
+                        <td class="col1">[16th August, 2022]</td>
+                        <td class="col2"><strong>Submitted paper to AAAI'23 with Dr.Kumar Madhukar and Dr.Subodh Vishnu Sharma</strong></td>
+                    </tr>
+
+                    <tr>
+                        <td class="col1">[15-17th December, 2022]</td>
+                        <td class="col2"><strong>I will be attending the Indian SAT-SMT School in Chennai</strong></td>
+                    </tr>
+
+                    <tr>
+                        <td class="col1">[23-25th February, 2023]</td>
+                        <td class="col2"><strong>I will be attending <a href="https://isec23.iiita.ac.in"></a>ISEC'23 in Allahabad</strong></td>
+                      </tr>
+                    
+                  </table>
+             </div>
+        </div>    
+         
+     </div>
+    -->   
+
+    <!--  ************************* Photo Gallery Starts Here ************************** -->
+    <!-- https://www.w3schools.com/howto/howto_js_slideshow.asp -->
+<!--   
+    <section id="photoGallery" style="height: 700px;">
+
+        <div class="p6" style="height: 700px;">
+            <div class="session-title row " >
+                <h2><font face="Trattatello">Beautiful places I have been to</font></h2>
+                
+                <div class="heading-line"></div>
+                
+            </div>
+            <div class="slideshow-container" style="height: 70%;">
+
+                Full-width images with number and caption text
+                <div class="mySlides" style="height:100%">
+                    <div class="numbertext">1 / 14</div>
+                    <img src="images/kashmir6.jpeg" style="height:100%">
+                    <div class="text">Dal Lake, Kashmir, 2023</div>
+                </div>
+
+                <div class="mySlides" style="height:100%">
+                    <div class="numbertext">2 / 14</div>
+                    <img src="images/kashmir3.jpg" style="height:100%">
+                    <div class="text">Kashmir, 2023</div>
+                </div>
+
+                <div class="mySlides" style="height:100%">
+                    <div class="numbertext">3 / 14</div>
+                    <img src="images/kashmir4.jpg" style="height:100%">
+                    <div class="text">Kashmir, 2023</div>
+                </div>
+
+                <div class="mySlides" style="height:100%">
+                    <div class="numbertext">4 / 14</div>
+                    <img src="images/chennai.jpeg" style="height:100%">
+                    <div class="text">Edward Elliot's Beach, Chennai, 2022</div>
+                </div>
+
+                <div class="mySlides" style="height:100%">
+                    <div class="numbertext">5 / 14</div>
+                    <img src="images/musoorie4.jpg" style="height:100%">
+                    <div class="text">Mussoorie, 2022</div>
+                </div>
+
+                <div class="mySlides" style="height:100%">
+                    <div class="numbertext">6 / 14</div>
+                    <img src="images/mussoorie3.jpg" style="height:100%">
+                    <div class="text">Mussoorie, 2022</div>
+                </div>
+
+                <div class="mySlides" style="height:100%">
+                    <div class="numbertext">7 / 14</div>
+                    <img src="images/mussoorie.jpg" style="height:100%">
+                    <div class="text">Mussoorie, 2022</div>
+                </div>
+
+                <div class="mySlides" style="height:100%">
+                    <div class="numbertext">8 / 14</div>
+                    <img src="images/sahastradhaara.jpg" style="height:100%">
+                    <div class="text">Sahastradhaara, Uttarakhand, 2022</div>
+                </div>
+
+                <div class="mySlides" style="height:100%">
+                    <div class="numbertext">9 / 14</div>
+                    <img src="images/dehradun.jpg" style="height:100%">
+                    <div class="text">Dehradun, 2022</div>
+                </div>
+
+                <div class="mySlides" style="height:100%">
+                    <div class="numbertext">10 / 14</div>
+                    <img src="images/auli3.jpg" style="height:100%">
+                    <div class="text">Auli, Uttarakhand, 2020</div>
+                </div>
+
+                <div class="mySlides" style="height:100%">
+                    <div class="numbertext">11 / 14</div>
+                    <img src="images/auli2.jpg" style="height:100%">
+                    <div class="text" >Joshimath, Uttarakhand, 2020</div>
+                </div>
+
+                <div class="mySlides" style="height:100%">
+                    <div class="numbertext">12 / 14</div>
+                    <img src="images/auli1.jpg" style="height:100%">
+                    <div class="text">Auli, Uttarakhand, 2020</div>
+                </div>
+                  
+                <div class="mySlides" style="height:100%">
+                    <div class="numbertext">13 / 14</div>
+                    <img src="images/delhibhavan.jpg" style="height:100%">
+                    <div class="text">Rashtrpati bhavan, Delhi, 2019</div>
+                </div>
+                  
+                <div class="mySlides" style="height:100%">
+                    <div class="numbertext">14 / 14</div>
+                    <img src="images/eiffel.jpg" style="height:100%">
+                    <div class="text">Waste to Wonder Park, Delhi, 2019</div>
+                </div>
+              
+                Next and previous buttons
+                <a class="prev" onclick="plusSlides(-1)" style="left: 0px">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+              </div>
+              <br>
+              
+              The dots/circles
+              <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span> 
+                <span class="dot" onclick="currentSlide(2)"></span> 
+                <span class="dot" onclick="currentSlide(3)"></span> 
+                <span class="dot" onclick="currentSlide(4)"></span> 
+                <span class="dot" onclick="currentSlide(5)"></span> 
+                <span class="dot" onclick="currentSlide(6)"></span> 
+                <span class="dot" onclick="currentSlide(7)"></span> 
+                <span class="dot" onclick="currentSlide(8)"></span> 
+                <span class="dot" onclick="currentSlide(9)"></span> 
+                <span class="dot" onclick="currentSlide(10)"></span> 
+                <span class="dot" onclick="currentSlide(11)"></span> 
+                <span class="dot" onclick="currentSlide(12)"></span> 
+                <span class="dot" onclick="currentSlide(13)"></span> 
+                <span class="dot" onclick="currentSlide(14)"></span> 
+              </div>
+        </div>
+    </section>
+
+-->
+    
+    <!--  ************************* Contact  Starts Here ************************** -->
+                                      
+    <section id="cntact_us" class="contact-us-single" style="background-color:#F5F5F5">
+
+        <div class="p6">
+            <div class="session-title row " >
+                <h2 >Contact</h2>
+                
+                <div class="heading-line"></div>
+                
+            </div>
+            <a href="https://www.linkedin.com/in/syeed-mohd-ameen-13641a1b4/" class="fab fa-linkedin fa-3x"></a> 
+            <a href="https://github.com/syeedameen" class="fab fa-github  fa-3x" ></a> 
+            <a href="mailto:syeedmohdameen@zhcet.ac.in" class="fa fa-envelope  fa-3x" ></a> 
+            <a href="https://twitter.com/syeed_ameen" class="fa fa-graduation-cap  fa-3x" ></a> 
+        </div>
+    </section>    
+                                                                                                                                                  
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        // Next/previous controls
+        function plusSlides(n) {
+        showSlides(slideIndex += n);
+        }
+
+        // Thumbnail image controls
+        function currentSlide(n) {
+        showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1} 
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none"; 
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block"; 
+        dots[slideIndex-1].className += " active";
+        }
+    </script>
+    </body>
+
+
+    <script src="assets/js/jquery-3.2.1.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/plugins/scroll-fixed/jquery-scrolltofixed-min.js"></script>
+    <script src="assets/plugins/slider/js/owl.carousel.min.js"></script>
+    <script src="assets/js/script.js"></script>
+
+
+</html>
