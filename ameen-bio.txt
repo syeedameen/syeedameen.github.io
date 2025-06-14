@@ -1,0 +1,4 @@
+Syeed Mohd Ameen is an embedded systems and computer architecture researcher with a strong focus on energy-efficient computation and low-level systems design. 
+He holds a Bachelor of Technology in Computer Science and Engineering from Rajasthan Technical University, Kota, and a Master of Technology from Aligarh Muslim University, Aligarh, 
+where he conducted research on "Energy-Efficient Heterogeneous Multi-core Architecture for Edge Computing Devices" under the guidance of Dr. Abdus Samad. 
+His interests span embedded systems, computer security, brain-computer interfaces, mathematical optimization, and machine learning. 
